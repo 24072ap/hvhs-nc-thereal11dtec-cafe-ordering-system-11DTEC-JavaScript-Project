@@ -2,5 +2,11 @@ body{
     background-color: blanchedalmond;
 }
 .latte{
-    
+    text-align: left;
+}
+.cappucino{
+    text-align: right;
+}
+.mocha{
+    text-align: center;
 }
