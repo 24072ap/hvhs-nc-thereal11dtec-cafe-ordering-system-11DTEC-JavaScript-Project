@@ -2,32 +2,32 @@ body{
     background-color: blanchedalmond;
 }
 .latte{
-    right: 70px;
+    right: 1000px;
     position: absolute;
     top: 80px;
-    text-align: left;
+    
 }
 .cappucino{
-    right: 80px;
+     left: 1000px;
      top: 80px;
     position: absolute;
-    text-align: right;
+    
 }
 .mocha{
-    right: 60px;
+     left: 300px;
      top: 80px;
     position: absolute;
-    text-align: center;
+    
 }
 .chocolatepastry{
-    right: 40px;
+     right: 40px;
      top: 80px;
     position: absolute;
-    text-align: left;
+    
 }
 .hac{
      top: 80px;
-    right: 40px;
+     right: 500px;
     position: absolute;
     width: 20px;
     length: 20px;
