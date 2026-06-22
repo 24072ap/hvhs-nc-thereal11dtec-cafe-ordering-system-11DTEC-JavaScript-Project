@@ -2,18 +2,33 @@ body{
     background-color: blanchedalmond;
 }
 .latte{
+    right: 70px;
+    position: absolute;
+    top: 80px;
     text-align: left;
 }
 .cappucino{
+    right: 80px;
+     top: 80px;
+    position: absolute;
     text-align: right;
 }
 .mocha{
+    right: 60px;
+     top: 80px;
+    position: absolute;
     text-align: center;
 }
 .chocolatepastry{
+    right: 40px;
+     top: 80px;
+    position: absolute;
     text-align: left;
 }
 .hac{
+     top: 80px;
+    right: 40px;
+    position: absolute;
     width: 20px;
     length: 20px;
 }
