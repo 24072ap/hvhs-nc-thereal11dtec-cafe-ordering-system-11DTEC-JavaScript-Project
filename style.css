@@ -2,20 +2,20 @@ body{
     background-color: blanchedalmond;
 }
 .latte{
-    right: 60%;
+    right: 40%;
     position: absolute;
     top: 10%;
     
 }
 .cappucino{
-     left: 10%;
+     left: 20%;
      top: 10%;
     position: absolute;
     
 }
 .mocha{
-     left: 300px;
-     top: 80px;
+     left: 80%;
+     top: 10%;
     position: absolute;
     
 }
@@ -25,8 +25,8 @@ body{
     position: absolute;
 }
 .hac{
-     top: 80px;
-     right: 500px;
+     top: 10%;
+     right: 35%;
     position: absolute;
     width: 20px;
     length: 20px;
