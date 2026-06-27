@@ -19,6 +19,8 @@ const itemPrice = [5, 5, 5, 5 ,5]; //array
   let orderItem = ORDER_FIELD.value;
   let cashAvailable = CASH_FIELD.value;
   let itemIndex = menuItems.indexOf(orderItem);
+  alert("You have ordered: " + orderItem + " for $" + itemPrice[itemIndex] + ". You have $" + cashAvailable + " available.");
+
 
   let shoppingChoice = SHOPPING_FIELD.value;
   shoppingArray.push(shoppingChoice);
