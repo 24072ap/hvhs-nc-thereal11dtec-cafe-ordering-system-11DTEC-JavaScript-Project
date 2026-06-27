@@ -1,5 +1,3 @@
- 
- 
  console.log("Running t05_JavaScript_and_HTML.js");
  
  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
