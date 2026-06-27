@@ -20,7 +20,7 @@ const itemPrice = [5, 5, 5, 5 ,7]; //array
         OUTPUT.innerHTML = "You don't have enough money<br>";
   }
   else {
-  OUTPUT.innerHTML += ("<p>Customer Name: " + customerName + "</p>");
+  OUTPUT.innerHTML = ("<p>Customer Name: " + customerName + "</p>");
   OUTPUT.innerHTML += ("<p>You bought " + orderItem + " for $" + itemPriceValue + "</p>");
   OUTPUT.innerHTML += ("<p>Total cost: " + itemPriceValue + "</p>");
   OUTPUT.innerHTML += ("<p>You gave us " + cashGiven + "</p>");
