@@ -16,7 +16,7 @@ const itemPrice = [5, 5, 5, 5 ,5]; //array
         OUTPUT.innerHTML = "You're not a good age<br>";
     }
 
-  let orderItem = ORDER_FIELD.value;
+  let orderItem = ORDER_FIELD.value.toLowerCase();
   alert("Order item: " + orderItem);
   let cashAvailable = CASH_FIELD.value;
   alert("Cash available: " + cashAvailable);
