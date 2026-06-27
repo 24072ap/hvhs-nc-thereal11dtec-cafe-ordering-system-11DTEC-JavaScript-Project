@@ -20,8 +20,8 @@ const itemPrice = [5, 5, 5, 5 ,7]; //array
   let itemPriceValue = itemPrice[itemIndex];
   alert("Item index: " + itemIndex);
   alert("You have ordered: " + orderItem + " for $" + itemPrice[itemIndex] + ". You have $" + cashAvailable + " available.");
-  if (CASH_FIELD.value < 13){
-        OUTPUT.innerHTML = "You're not a good age<br>";
+  if (CASH_FIELD.value < itemPriceValue){
+        OUTPUT.innerHTML = "You don't have enough money<br>";
   }
 
 
