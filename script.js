@@ -17,8 +17,11 @@ const itemPrice = [5, 5, 5, 5 ,5]; //array
     }
 
   let orderItem = ORDER_FIELD.value;
+  alert("Order item: " + orderItem);
   let cashAvailable = CASH_FIELD.value;
+  alert("Cash available: " + cashAvailable);
   let itemIndex = menuItems.indexOf(orderItem);
+  alert("Item index: " + itemIndex);
   alert("You have ordered: " + orderItem + " for $" + itemPrice[itemIndex] + ". You have $" + cashAvailable + " available.");
 
 
