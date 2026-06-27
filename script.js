@@ -23,6 +23,9 @@ const itemPrice = [5, 5, 5, 5 ,7]; //array
   if (CASH_FIELD.value < itemPriceValue){
         OUTPUT.innerHTML = "You don't have enough money<br>";
   }
+  else {
+
+  }
 
 
   let shoppingChoice = SHOPPING_FIELD.value;
