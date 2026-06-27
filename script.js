@@ -17,6 +17,7 @@ const itemPrice = [5, 5, 5, 5 ,5]; //array
   alert("Cash available: " + cashAvailable);
   alert("Size of array:" + menuItems.length);
   let itemIndex = menuItems.indexOf(orderItem);
+  let itemPriceValue = itemPrice[itemIndex];
   alert("Item index: " + itemIndex);
   alert("You have ordered: " + orderItem + " for $" + itemPrice[itemIndex] + ". You have $" + cashAvailable + " available.");
   if (CASH_FIELD.value < 13){
