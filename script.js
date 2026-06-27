@@ -2,6 +2,9 @@
  
  console.log("Running t05_JavaScript_and_HTML.js");
  
+ const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+ OUTPUT.innerHTML = "<h2>Added by Javascript</h2>";
+
 function start(){
 //Menu items
 const menudrink = ["Latte $5", "Cappucino $5", "Mocha $5"] //array
@@ -23,6 +26,5 @@ function ButtonClick(){
     OUTPUT.innerHTML += shoppingArray[i] + "<br>";
   }
  
- const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
- OUTPUT.innerHTML = "<h2>Added by Javascript</h2>";
+
 }
