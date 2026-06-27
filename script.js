@@ -1,8 +1,9 @@
  console.log("Running t05_JavaScript_and_HTML.js");
  
  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
- const SHOPPING_FORM = document.getElementById("welcomeForm");
+  const SHOPPING_FORM = document.getElementById("welcomeForm");
 function start(){
+ 
 //Menu items
 const menuItems = ["latte", "cappucino", "mocha", "chocolate muffin", "chocolate pastry"]; //array
 const itemPrice = [5, 5, 5, 5 ,7]; //array
@@ -14,6 +15,7 @@ const itemPrice = [5, 5, 5, 5 ,7]; //array
   let itemPriceValue = itemPrice[itemIndex];
   let cashGiven = CASH_FIELD.value;
   let change = cashGiven - itemPriceValue;
+  alert(SHOPPING_FORM.checkValidity());
   if (SHOPPING_FORM.checkValidity()=== false){
         OUTPUT.innerHTML += "Please fill out all fields correctly. <br>";
     } 
