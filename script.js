@@ -3,7 +3,6 @@
  console.log("Running t05_JavaScript_and_HTML.js");
  
  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
- OUTPUT.innerHTML = "<h2>Added by Javascript</h2>";
 
 function start(){
 //Menu items
