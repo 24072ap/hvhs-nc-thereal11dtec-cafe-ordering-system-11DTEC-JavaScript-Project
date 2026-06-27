@@ -15,15 +15,17 @@ const itemPrice = [5, 5, 5, 5 ,7]; //array
   let cashAvailable = CASH_FIELD.value;
   let itemIndex = menuItems.indexOf(orderItem);
   let itemPriceValue = itemPrice[itemIndex];
-  if (CASH_FIELD.value < itemPriceValue){
+  let cashGiven = CASH_FIELD.value;
+  let change = cashGiven - itemPriceValue;
+  if (cashGiven < itemPriceValue){
         OUTPUT.innerHTML = "You don't have enough money<br>";
   }
   else {
   OUTPUT.innerHTML += ("<p>Customer Name: " + customerName + "</p>");
   OUTPUT.innerHTML += ("<p>You bought " + orderItem + " for $" + itemPriceValue + "</p>");
   OUTPUT.innerHTML += ("<p>Total cost: " + itemPriceValue + "</p>");
-  OUTPUT.innerHTML += ("<p>You gave us " + CASH_FIELD.value + "</p>");
-  OUTPUT.innerHTML += ("<p>You have " + pocketMoney + " dollars" + "</p>" );
+  OUTPUT.innerHTML += ("<p>You gave us " + cashGiven + "</p>");
+  OUTPUT.innerHTML += ("<p>Change: $" + change + "</p>" );
   }
 
 
