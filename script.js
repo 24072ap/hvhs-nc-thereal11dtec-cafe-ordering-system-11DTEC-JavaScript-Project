@@ -20,25 +20,12 @@ const itemPrice = [5, 5, 5, 5 ,7]; //array
         OUTPUT.innerHTML = "You don't have enough money<br>";
   }
   else {
-  OUTPUT.innerHTML = ("<p>Customer Name: " + customerName + "</p>");
-  OUTPUT.innerHTML += ("<p>You bought " + orderItem + " for $" + itemPriceValue + "</p>");
-  OUTPUT.innerHTML += ("<p>Total cost: " + itemPriceValue + "</p>");
-  OUTPUT.innerHTML += ("<p>You gave us " + cashGiven + "</p>");
-  OUTPUT.innerHTML += ("<p>Change: $" + change + "</p>" );
+  OUTPUT.innerHTML = ("<h2><b>Receipt: " + "</b></h2><br>");
+  OUTPUT.innerHTML += ("<b>Customer Name: </b>" + customerName + "<br>");
+  OUTPUT.innerHTML += ("<b>You bought </b>" + orderItem + "<b> for</b> $" + itemPriceValue + "<br>");
+  OUTPUT.innerHTML += ("<b>Total cost: </b>$" + itemPriceValue + "<br>");
+  OUTPUT.innerHTML += ("<b>You gave us </b>$" + cashGiven + "<br>");
+  OUTPUT.innerHTML += ("<b>Change: </b>$" + change + "<br>");
   }
-
-
-  let shoppingChoice = SHOPPING_FIELD.value;
-  shoppingArray.push(shoppingChoice);
-  OUTPUT.innerHTML += "You have added: "+shoppingChoice+ "  to the list "+"<br> <br> <br><br>";
-
-}
-
-function ButtonClick(){
-  OUTPUT.innerHTML += "These are the items on your shopping list:<br>";
-  for(let i=0; i<shoppingArray.length; i++){
-    OUTPUT.innerHTML += shoppingArray[i] + "<br>";
-  }
- 
 
 }
