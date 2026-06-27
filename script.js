@@ -8,6 +8,8 @@ const menudrink = ["Latte $5", "Cappucino $5", "Mocha $5"] //array
 const itemPrice = [5, 5, 5];
 const menufood = [ "Chocolate Muffin $4", "Chocolate Pastry $7"] //array2
 const itemPrice2 = [4, 7];
+
+
   
   let shoppingChoice = SHOPPING_FIELD.value;
   shoppingArray.push(shoppingChoice);
