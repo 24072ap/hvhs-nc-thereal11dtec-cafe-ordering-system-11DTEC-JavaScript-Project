@@ -11,11 +11,6 @@ const menuItems = ["latte", "cappucino", "mocha", "chocolate muffin", "chocolate
 const itemPrice = [5, 5, 5, 5 ,5]; //array
 
 
-
-  if (CASH_FIELD.value < 13 || CASH_FIELD.value > 99){
-        OUTPUT.innerHTML = "You're not a good age<br>";
-    }
-
   let orderItem = ORDER_FIELD.value.toLowerCase();
   alert("Order item: " + orderItem);
   let cashAvailable = CASH_FIELD.value;
@@ -24,6 +19,9 @@ const itemPrice = [5, 5, 5, 5 ,5]; //array
   let itemIndex = menuItems.indexOf(orderItem);
   alert("Item index: " + itemIndex);
   alert("You have ordered: " + orderItem + " for $" + itemPrice[itemIndex] + ". You have $" + cashAvailable + " available.");
+  if (CASH_FIELD.value < 13){
+        OUTPUT.innerHTML = "You're not a good age<br>";
+  }
 
 
   let shoppingChoice = SHOPPING_FIELD.value;
