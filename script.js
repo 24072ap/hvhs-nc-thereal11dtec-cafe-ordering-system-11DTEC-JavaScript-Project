@@ -28,4 +28,10 @@ const itemPrice = [5, 5, 5, 5 ,7]; //array
   OUTPUT.innerHTML += ("<b>Change: </b>$" + change + "<br>");
   }
 
+  function clearFields() {
+    CUSTOMER_FIELD.value = "";
+    ORDER_FIELD.value = "";
+    CASH_FIELD.value = "";
+    OUTPUT.innerHTML = "";
+  }
 }
