@@ -7,7 +7,7 @@
 
 function start(){
 //Menu items
-const menuItems = ["Latte $5", "Cappucino $5", "Mocha $5", "Chocolate Muffin $5", "Chocolate Pastry $5"]; //array
+const menuItems = ["Latte", "Cappucino", "Mocha", "Chocolate Muffin", "Chocolate Pastry"]; //array
 const itemPrice = [5, 5, 5, 5 ,5]; //array
 
 
