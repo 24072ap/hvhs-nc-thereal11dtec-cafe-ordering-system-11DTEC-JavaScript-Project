@@ -8,7 +8,7 @@
 function start(){
 //Menu items
 const menuItems = ["latte", "cappucino", "mocha", "chocolate muffin", "chocolate pastry"]; //array
-const itemPrice = [5, 5, 5, 5 ,5]; //array
+const itemPrice = [5, 5, 5, 5 ,7]; //array
 
 
   let orderItem = ORDER_FIELD.value.toLowerCase();
