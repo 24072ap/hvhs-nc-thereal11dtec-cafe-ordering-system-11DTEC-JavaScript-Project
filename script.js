@@ -13,7 +13,7 @@ const menufood = [ "Chocolate Muffin $4", "Chocolate Pastry $7"] //array2
 const itemPrice2 = [4, 7];
 
 
-  if (AGE_FIELD.value < 13 || AGE_FIELD.value > 99){
+  if (CASH_FIELD.value < 13 || CASH_FIELD.value > 99){
         OUTPUT.innerHTML = "You're not a good age<br>";
     }
 
