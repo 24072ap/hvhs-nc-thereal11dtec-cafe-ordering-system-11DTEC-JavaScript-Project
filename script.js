@@ -10,24 +10,19 @@ function start(){
 const menuItems = ["latte", "cappucino", "mocha", "chocolate muffin", "chocolate pastry"]; //array
 const itemPrice = [5, 5, 5, 5 ,7]; //array
 
-
+  let customerName = CUSTOMER_FIELD.value;
   let orderItem = ORDER_FIELD.value.toLowerCase();
-  alert("Order item: " + orderItem);
   let cashAvailable = CASH_FIELD.value;
-  alert("Cash available: " + cashAvailable);
-  alert("Size of array:" + menuItems.length);
   let itemIndex = menuItems.indexOf(orderItem);
   let itemPriceValue = itemPrice[itemIndex];
-  alert("Item index: " + itemIndex);
-  alert("You have ordered: " + orderItem + " for $" + itemPrice[itemIndex] + ". You have $" + cashAvailable + " available.");
   if (CASH_FIELD.value < itemPriceValue){
         OUTPUT.innerHTML = "You don't have enough money<br>";
   }
   else {
-  OUTPUT.innerHTML += ("<p>Hiya " + Username + "</p>");
-  OUTPUT.innerHTML += ("<p>As of " + year + " you are " + age + " years old" + "</p>");
-  OUTPUT.innerHTML += ("<p>You were born in " + (year - age) + "</p>");
-  OUTPUT.innerHTML += ("<p>In 10 years you will be " + newAge + " years old" + "</p>");
+  OUTPUT.innerHTML += ("<p>Customer Name: " + customerName + "</p>");
+  OUTPUT.innerHTML += ("<p>You bought " + orderItem + " for $" + itemPriceValue + "</p>");
+  OUTPUT.innerHTML += ("<p>Total cost: " + itemPriceValue + "</p>");
+  OUTPUT.innerHTML += ("<p>You gave us " + newAge + " years old" + "</p>");
   OUTPUT.innerHTML += ("<p>You have " + pocketMoney + " dollars" + "</p>" );
   }
 
