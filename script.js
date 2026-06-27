@@ -22,7 +22,7 @@ const itemPrice = [5, 5, 5, 5 ,7]; //array
   OUTPUT.innerHTML += ("<p>Customer Name: " + customerName + "</p>");
   OUTPUT.innerHTML += ("<p>You bought " + orderItem + " for $" + itemPriceValue + "</p>");
   OUTPUT.innerHTML += ("<p>Total cost: " + itemPriceValue + "</p>");
-  OUTPUT.innerHTML += ("<p>You gave us " + newAge + " years old" + "</p>");
+  OUTPUT.innerHTML += ("<p>You gave us " + CASH_FIELD.value + "</p>");
   OUTPUT.innerHTML += ("<p>You have " + pocketMoney + " dollars" + "</p>" );
   }
 
