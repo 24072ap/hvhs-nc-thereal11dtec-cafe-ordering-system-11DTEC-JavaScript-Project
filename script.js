@@ -3,7 +3,7 @@
  console.log("Running t05_JavaScript_and_HTML.js");
  
  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-
+ const SHOPPING_FORM = document.getElementById("welcomeForm");
 function start(){
 //Menu items
 const menuItems = ["latte", "cappucino", "mocha", "chocolate muffin", "chocolate pastry"]; //array
