@@ -18,7 +18,8 @@ const itemPrice = [5, 5, 5, 5 ,5]; //array
 
   let orderItem = ORDER_FIELD.value;
   let cashAvailable = CASH_FIELD.value;
-  let itemIndex = men
+  let itemIndex = menuItems.indexOf(orderItem);
+
   let shoppingChoice = SHOPPING_FIELD.value;
   shoppingArray.push(shoppingChoice);
   OUTPUT.innerHTML += "You have added: "+shoppingChoice+ "  to the list "+"<br> <br> <br><br>";
