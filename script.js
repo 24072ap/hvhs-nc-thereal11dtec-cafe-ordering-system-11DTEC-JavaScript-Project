@@ -15,9 +15,11 @@ function start(){
   let orderItem = ORDER_FIELD.value.toLowerCase();
   let cashAvailable = CASH_FIELD.value;
   var itemIndex;
+  var itemFound = false;
   for (let i = 0; i < menuItems.length; i++) {
     if (orderItem === menuItems[i]) {
       itemIndex = i;
+      itemFound = true;
       break;
     }
   }
