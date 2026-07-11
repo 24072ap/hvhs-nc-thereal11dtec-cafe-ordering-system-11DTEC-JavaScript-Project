@@ -14,13 +14,13 @@ function start(){
   let customerName = CUSTOMER_FIELD.value;
   let orderItem = ORDER_FIELD.value.toLowerCase();
   let cashAvailable = CASH_FIELD.value;
-  //let itemIndex = menuItems.indexOf(orderItem);
+  var itemIndex;
   for (let i = 0; i < menuItems.length; i++) {
     if (orderItem === menuItems[i]) {
-      let itemIndex = i;
+      itemIndex = i;
       break;
     }
-
+  }
   let itemPriceValue = itemPrice[itemIndex];
   let cashGiven = CASH_FIELD.value;
   let change = cashGiven - itemPriceValue;
