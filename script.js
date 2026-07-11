@@ -3,12 +3,13 @@
 function start(){
  const SHOPPING_FORM = document.getElementById("welcomeForm");
   if (SHOPPING_FORM.checkValidity()=== false){
-        OUTPUT.innerHTML = "Please fill out all fields correctly. <br>";
-    } 
-    else {
-//Menu items
-const menuItems = ["latte", "cappucino", "mocha", "chocolate muffin", "chocolate pastry"]; //array
-const itemPrice = [5, 5, 5, 5 ,7]; //array
+      OUTPUT.innerHTML = "Please fill out all fields correctly. <br>";
+  } 
+  else {
+  //Menu items
+  const menuItems = ["latte", "cappucino", "mocha", "chocolate muffin", "chocolate pastry"]; //array
+  //price of each item in the same order as the menuItems array
+  const itemPrice = [5, 5, 5, 5 ,7]; 
 
   let customerName = CUSTOMER_FIELD.value;
   let orderItem = ORDER_FIELD.value.toLowerCase();
@@ -21,14 +22,14 @@ const itemPrice = [5, 5, 5, 5 ,7]; //array
         OUTPUT.innerHTML = "You don't have enough money<br>";
   }
   else {
-  OUTPUT.innerHTML = ("<h2><b>Receipt: " + "</b></h2><br>");
-  OUTPUT.innerHTML += ("<b>Customer Name: </b>" + customerName + "<br>");
-  OUTPUT.innerHTML += ("<b>You bought </b>" + orderItem + "<b> for</b> $" + itemPriceValue + "<br>");
-  OUTPUT.innerHTML += ("<b>Total cost: </b>$" + itemPriceValue + "<br>");
-  OUTPUT.innerHTML += ("<b>You gave us </b>$" + cashGiven + "<br>");
-  OUTPUT.innerHTML += ("<b>Change: </b>$" + change + "<br>");
+    OUTPUT.innerHTML = ("<h2><b>Receipt: " + "</b></h2><br>");
+    OUTPUT.innerHTML += ("<b>Customer Name: </b>" + customerName + "<br>");
+    OUTPUT.innerHTML += ("<b>You bought </b>" + orderItem + "<b> for</b> $" + itemPriceValue + "<br>");
+    OUTPUT.innerHTML += ("<b>Total cost: </b>$" + itemPriceValue + "<br>");
+    OUTPUT.innerHTML += ("<b>You gave us </b>$" + cashGiven + "<br>");
+    OUTPUT.innerHTML += ("<b>Change: </b>$" + change + "<br>");
   }
-}
+  }
 }
 function clearFields() {
     CUSTOMER_FIELD.value = "";
