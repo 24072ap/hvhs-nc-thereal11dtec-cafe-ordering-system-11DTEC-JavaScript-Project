@@ -25,7 +25,6 @@ function start(){
   }
   if(!itemFound){
     OUTPUT.innerHTML = "Sorry, we don't have that item. Please choose from the menu.<br>";
-    break;
   }
   let itemPriceValue = itemPrice[itemIndex];
   let cashGiven = CASH_FIELD.value;
