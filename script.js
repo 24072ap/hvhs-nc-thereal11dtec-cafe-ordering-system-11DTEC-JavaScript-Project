@@ -23,14 +23,14 @@ function start(){
       break;
     }
   }
-  if(!itemFound){
-    OUTPUT.innerHTML = "Sorry, we don't have that item. Please choose from the menu.<br>";
-  }
   let itemPriceValue = itemPrice[itemIndex];
   let cashGiven = CASH_FIELD.value;
   let change = cashGiven - itemPriceValue;
+  if(!itemFound){
+    OUTPUT.innerHTML = "Sorry, we don't have that item. Please choose from the menu.<br>";
+  }
   //Check if cash given is less than the item price and display appropriate message
-  if (cashGiven < itemPriceValue){
+  else if (cashGiven < itemPriceValue){
         OUTPUT.innerHTML = "You don't have enough money<br>";
   }
   else {
