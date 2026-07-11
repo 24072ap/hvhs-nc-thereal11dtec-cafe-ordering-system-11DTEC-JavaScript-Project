@@ -1,4 +1,4 @@
-  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
   
 function start(){
  const SHOPPING_FORM = document.getElementById("welcomeForm");
@@ -10,7 +10,7 @@ function start(){
   const menuItems = ["latte", "cappucino", "mocha", "chocolate muffin", "chocolate pastry"]; //array
   //price of each item in the same order as the menuItems array
   const itemPrice = [5, 5, 5, 5 ,7]; 
-
+  //Get the values from the form fields
   let customerName = CUSTOMER_FIELD.value;
   let orderItem = ORDER_FIELD.value.toLowerCase();
   let cashAvailable = CASH_FIELD.value;
@@ -18,6 +18,7 @@ function start(){
   let itemPriceValue = itemPrice[itemIndex];
   let cashGiven = CASH_FIELD.value;
   let change = cashGiven - itemPriceValue;
+  //Check if cash given is less than the item price and display appropriate message
   if (cashGiven < itemPriceValue){
         OUTPUT.innerHTML = "You don't have enough money<br>";
   }
@@ -36,4 +37,4 @@ function clearFields() {
     ORDER_FIELD.value = "";
     CASH_FIELD.value = "";
     OUTPUT.innerHTML = "";
-  }
+}
