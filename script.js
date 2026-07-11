@@ -17,8 +17,6 @@ const itemPrice = [5, 5, 5, 5 ,7]; //array
   let itemPriceValue = itemPrice[itemIndex];
   let cashGiven = CASH_FIELD.value;
   let change = cashGiven - itemPriceValue;
-  alert(SHOPPING_FORM.checkValidity());
- 
   if (cashGiven < itemPriceValue){
         OUTPUT.innerHTML = "You don't have enough money<br>";
   }
