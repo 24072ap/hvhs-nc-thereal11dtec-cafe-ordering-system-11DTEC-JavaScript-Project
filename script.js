@@ -3,7 +3,7 @@
 function start(){
  const SHOPPING_FORM = document.getElementById("welcomeForm");
   if (SHOPPING_FORM.checkValidity()=== false){
-        OUTPUT.innerHTML += "Please fill out all fields correctly. <br>";
+        OUTPUT.innerHTML = "Please fill out all fields correctly. <br>";
     } 
     else {
 //Menu items
