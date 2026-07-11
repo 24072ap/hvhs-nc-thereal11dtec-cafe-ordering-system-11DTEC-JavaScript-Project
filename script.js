@@ -1,9 +1,11 @@
- console.log("Running t05_JavaScript_and_HTML.js");
- 
- const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
-  const SHOPPING_FORM = document.getElementById("welcomeForm");
+  const OUTPUT = document.getElementById("spaceForJavaScriptOutput");
+  
 function start(){
- 
+ const SHOPPING_FORM = document.getElementById("welcomeForm");
+  if (SHOPPING_FORM.checkValidity()=== false){
+        OUTPUT.innerHTML += "Please fill out all fields correctly. <br>";
+    } 
+    else {
 //Menu items
 const menuItems = ["latte", "cappucino", "mocha", "chocolate muffin", "chocolate pastry"]; //array
 const itemPrice = [5, 5, 5, 5 ,7]; //array
@@ -16,9 +18,7 @@ const itemPrice = [5, 5, 5, 5 ,7]; //array
   let cashGiven = CASH_FIELD.value;
   let change = cashGiven - itemPriceValue;
   alert(SHOPPING_FORM.checkValidity());
-  if (SHOPPING_FORM.checkValidity()=== false){
-        OUTPUT.innerHTML += "Please fill out all fields correctly. <br>";
-    } 
+ 
   if (cashGiven < itemPriceValue){
         OUTPUT.innerHTML = "You don't have enough money<br>";
   }
@@ -30,6 +30,7 @@ const itemPrice = [5, 5, 5, 5 ,7]; //array
   OUTPUT.innerHTML += ("<b>You gave us </b>$" + cashGiven + "<br>");
   OUTPUT.innerHTML += ("<b>Change: </b>$" + change + "<br>");
   }
+}
 }
 function clearFields() {
     CUSTOMER_FIELD.value = "";
